@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory card game</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="start-container" id="startContainer">
+        <h1 class="heading">Memeory game</h1>
+        <div class="game-rules">
+          <p class="paragraph">
+            Reveal and match pairs of cards to eliminate them from the game. The
+            goal is to uncover all cards within a 75 seconds timeframe to secure
+            a win.
+          </p>
+          <p class="paragraph">
+            Winners earn a spot on the scoreboard, inviting friendly competition
+            as players vie for the title of the fastest participant.
+          </p>
+          <p class="paragraph">
+            If victory eludes you, your name won't make it to the scoreboard,
+            but you'll have the chance to review all the unrevealed cards once
+            the timer runs out.
+          </p>
+          <p class="paragraph outsmart">
+            !!! Resist the urge to outsmart the game: every new round features a
+            random shuffle.
+          </p>
+        </div>
+        <form id="form" class="form">
+          <h2>Ready to play? Remember to input your name.</h2>
+          <label for="nameInput">Enter your name:</label>
+          <input type="text" id="nameInput" required autocomplete="off" />
+          <button type="submit" class="button" id="startButton">Start</button>
+        </form>
+      </div>
+      <div class="end-screen" id="endScreen"></div>
+      <div class="site-container">
+        <div id="gameContainer" class="game-container"></div>
+        <div class="score-board" id="scoreBoard">
+          <h1 class="game-timer" id="gameTimer"></h1>
+          <h2>Scoreboard</h2>
+        </div>
+        <button class="button reset" id="resetButton">Reset the game</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

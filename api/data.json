@@ -1,0 +1,42 @@
+[
+   {
+     "name": "Darkness",
+     "url": "https://vsafonova.github.io/memory-card-game/api/images/darkness.jpg"
+   },
+   {
+     "name": "double",
+     "url": "https://vsafonova.github.io/memory-card-game/api/images/double.jpg"
+   },
+   {
+     "name": "fairy",
+     "url": "https://vsafonova.github.io/memory-card-game/api/images/fairy.jpg"
+   },
+   {
+     "name": "fighting",
+     "url": "https://vsafonova.github.io/memory-card-game/api/images/fighting.jpg"
+   },
+   {
+     "name": "fire",
+     "url": "https://vsafonova.github.io/memory-card-game/api/images/fire.jpg"
+   },
+   {
+     "name": "grass",
+     "url": "https://vsafonova.github.io/memory-card-game/api/images/grass.jpg"
+   },
+   {
+     "name": "lightning",
+     "url": "https://vsafonova.github.io/memory-card-game/api/images/lightning.jpg"
+   },
+   {
+     "name": "metal",
+     "url": "https://vsafonova.github.io/memory-card-game/api/images/metal.jpg"
+   },
+   {
+     "name": "psychic",
+     "url": "https://vsafonova.github.io/memory-card-game/api/images/psychic.jpg"
+   },
+   {
+     "name": "water",
+     "url": "https://vsafonova.github.io/memory-card-game/api/images/water.jpg"
+   }
+ ]
