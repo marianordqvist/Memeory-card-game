@@ -20,8 +20,8 @@ let scoreData = [];
 loadPlayerData();
 
 async function prepareGame() {
-  let imagesArray = await fetchData();
-  const deck = createDeck(imagesArray);
+  let apiImages = await fetchData();
+  const deck = createDeck(apiImages);
   neededGuesses = deck.length;
   let shuffledCards = shuffleCards(deck);
   startGame(shuffledCards);
@@ -255,23 +255,6 @@ function resetGame() {
   startContainerEl.classList.remove("start-container-hidden");
 }
 
-//eventlisteners
-
-formEl.addEventListener("submit", function (e) {
-  e.preventDefault();
-  userName = nameInputEl.value;
-  prepareGame().then(() => {
-    startContainerEl.classList.add("start-container-hidden");
-    nameInputEl.value = "";
-    resetButtonEl.style.visibility = "visible";
-  });
-});
-
-resetButtonEl.addEventListener("click", function () {
-  resetGame();
-  resetButtonEl.style.visibility = "hidden";
-});
-
 // Sounds effects
 function playFlipSound() {
   flipSound.play();
@@ -316,3 +299,20 @@ function stopSounds() {
     element.currentTime = 0;
   });
 }
+
+//eventlisteners
+
+formEl.addEventListener("submit", function (e) {
+  e.preventDefault();
+  userName = nameInputEl.value;
+  prepareGame().then(() => {
+    startContainerEl.classList.add("start-container-hidden");
+    nameInputEl.value = "";
+    resetButtonEl.style.visibility = "visible";
+  });
+});
+
+resetButtonEl.addEventListener("click", function () {
+  resetGame();
+  resetButtonEl.style.visibility = "hidden";
+});
