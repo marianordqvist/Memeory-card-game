@@ -1,3 +1,5 @@
+"use strict";
+
 let gameContainerEl = document.querySelector("#gameContainer");
 let startContainerEl = document.querySelector("#startContainer");
 let nameInputEl = document.querySelector("#nameInput");
